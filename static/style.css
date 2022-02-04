@@ -9,11 +9,12 @@
 :root {
     --AccentBlue: #3090D6;
     --AccentRed: #E85151;
-    --AccentGreen: #74C64D;
+    --AccentGreen: #64B040;
     --RedGradient: rgba(222, 77, 77, 0.5);
     --BlueGradient: rgba(77, 161, 222, 0.5);
     --GreenGradient: rgba(123, 222, 77, 0.5);
     --Text: white;
+    --DarkerText: #9E9E9E;
     --BodyBG: #1C1C1C;
     --BoxBG: #121212;
     --DarkerBoxBG: #090909;
@@ -63,6 +64,7 @@ header {
     height: 4.444rem;
     width: 4.444rem;
     background-image: url(./logo.svg);
+    background-size: 100% 100%;
 }
 
 .Menu {
@@ -87,6 +89,21 @@ header {
 .MenuButton.Download {
     margin-left: 0.778rem;
     background: var(--AccentBlue);
+}
+
+footer {
+    padding: 1rem;
+    display: flex;
+}
+
+footer > p {
+    font-size: 0.778rem;
+    color: var(--DarkerText);
+}
+
+.EggText {
+    color: var(--BodyBG);
+    cursor: default;
 }
 
 .Banner {
@@ -135,13 +152,11 @@ header {
 }
 
 .InfoPanels > div {
-    display: flex;
-    align-items: center;
-    padding: 0 3.889rem;
+    padding: 3.889rem;
 }
 
 .InfoPanels > div > div > .GradientHeading {
-    margin-bottom: 1.111rem;
+    margin-bottom: 1.667rem;
 }
 
 .InfoPanels > .Syntax {
@@ -150,9 +165,42 @@ header {
 
 .InfoPanels > .GetStarted {
     background: linear-gradient(90deg, var(--BodyBG) 0%, var(--GreenGradient) 100%);
+    text-align: right;
 }
 
 .InfoPanels > .Syntax > div > p {
     width: 60%;
     margin-bottom: 2.778rem;
+}
+
+.GetStartedPanelsContainer {
+    display: flex;
+}
+
+.GetStartedPanels {
+    display: inline-flex;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: auto;
+    column-gap: 1.111rem;
+}
+
+.GetStartedPanels > div {
+    background: var(--BodyBG);
+    height: calc(12.778rem - 1.111rem - 1.111rem);
+    width: calc(12.111rem - 1.111rem - 1.111rem);
+    text-align: left;
+    padding: 1.111rem;
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+    row-gap: 0.556rem;
+}
+
+.GetStartedPanels > div > .Sub {
+    font-size: 0.778rem;
+    color: var(--DarkerText);
+}
+
+.GetStartedPanels > div > button {
+    background: var(--AccentGreen);
+    height: 2.778rem;
 }

@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./static/style.css" />
     <script src="https://cdn.jsdelivr.net/npm/ripplet.js@1.1.0/umd/ripplet.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
     <!-- Primary Meta Tags -->
     <title>ReCT | A simple and quick programing language</title>
@@ -28,17 +29,7 @@
 </head>
 
 <body>
-    <header>
-        <div class="Logo"></div>
-
-        <div class="Menu">
-            <div class="MenuButton Active mdc-ripple-surface mdc-ripple-surface--primary">Home</div>
-            <div class="MenuButton">Tutorial</div>
-            <div class="MenuButton">Documentation</div>
-            <div class="MenuButton">RPS</div>
-            <div class="MenuButton Download">Download</div>
-        </div>
-    </header>
+    <header></header>
 
     <main>
         <div class="Banner">
@@ -62,10 +53,41 @@
                 </div>
             </div>
 
-            <div class="GetStarted"></div>
+            <div class="GetStarted">
+                <div>
+                    <h1 class="GradientHeading">Get Started</h1>
+                    <div class="GetStartedPanelsContainer">
+                        <div class="GetStartedPanels">
+                            <div>
+                                <p class="Heading">Download</p>
+                                <p class="Sub">Get ReCT up and running by downloading it on your OS of choice.</p>
+                                <div></div>
+                                <button>Download Page</button>
+                            </div>
+
+                            <div>
+                                <p class="Heading">Tutorial</p>
+                                <p class="Sub">Quickly get the basics of ReCT down with a Hello World tutorial.</p>
+                                <div></div>
+                                <button>Tutorial</button>
+                            </div>
+
+                            <div>
+                                <p class="Heading">Documentation</p>
+                                <p class="Sub">Check out everything that ReCT can do.</p>
+                                <div></div>
+                                <button>Documentation</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+
+        <footer></footer>
     </main>
 
+    <script src="./static/include.js"></script>
     <script src="./static/ripple.js"></script>
 </body>
 
