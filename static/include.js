@@ -1,4 +1,4 @@
-axios.get("/static/includes/header.html")
+axios.get("./static/includes/header.html")
     .then((response) => {
         document.querySelector("header").innerHTML = response.data;
         headerLoaded();
@@ -7,10 +7,9 @@ axios.get("/static/includes/header.html")
 
     });
 
-axios.get("/static/includes/footer.html")
+axios.get("./static/includes/footer.html")
     .then((response) => {
         document.querySelector("footer").innerHTML = response.data;
-        headerLoaded();
     })
     .catch((err) => {
 
